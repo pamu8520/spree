@@ -8,9 +8,9 @@
 export default {
   name: 'Burger',
   props: {
-    burger: Object
-  }
-}
+    burger: Object,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

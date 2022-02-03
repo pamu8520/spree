@@ -14,26 +14,26 @@
   </div>
 </template>
 <script>
-import io from 'socket.io-client'
+import io from 'socket.io-client';
+
 const socket = io();
 
 export default {
   name: 'Dispatcher',
-  data: function () {
+  data() {
     return {
-      orders: null
-    }
+      orders: null,
+    };
   },
-  created: function () {
-    socket.on('currentQueue', data =>
-      this.orders = data.orders);
+  created() {
+    socket.on('currentQueue', (data) => this.orders = data.orders);
   },
   methods: {
-    clearQueue: function () {
+    clearQueue() {
       socket.emit('clearQueue');
-    }
-  }
-}
+    },
+  },
+};
 </script>
 <style>
 #orderList {
