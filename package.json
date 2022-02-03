@@ -1,5 +1,5 @@
 {
-  "name": "1md031-lab-21",
+  "name": "spree-speed-dating",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -23,6 +23,7 @@
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-vue": "^7.0.0",
     "webpack-dev-middleware": "^5.2.1",
     "webpack-hot-middleware": "^2.25.1"
